@@ -1,3 +1,6 @@
+<?php
+	include 'scrape.php';
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
@@ -241,11 +244,7 @@
 							<div class="popular_post">
 								<div class="sidebar_title"><h2>Latest News</h2></div>
 								<ul>
-									<li><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></li>
-									<li><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></li>
-									<li><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></li>
-									<li><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></li>
-									<li><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></li>
+									<?php echo get_news($access_token);?>
 								</ul>
 							</div>
 							</div>

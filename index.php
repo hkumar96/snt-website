@@ -1,4 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php
+	$access_token = "1600505566929296|XcDs3N2LG5hTANnjAV2nXGpdjK4";
+	include 'scrape.php';
+?>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <!--
@@ -40,10 +44,11 @@
 					</div>
 				</div>
 				<div class="header_bottom">
+					
 					<nav>
 						<ul id="nav">
 							<li><a href="">Home</a></li>
-							<li><a href="clubs.html">Clubs</a></li>
+							<li><a href="clubs.php">Clubs</a></li>
 							<li id="dropdown"><a href="">Drop Down</a>
 								<ul>
 									<li><a href="/">Home</a></li>
@@ -78,13 +83,7 @@
 				
 					<div class="clearfix slider">
 						<ul class="pgwSlider">
-							<li><img src="images/thumbs/megamind_07.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars" data-large-src="images/slides/megamind_07.jpg"/></li>
-							<li><img src="images/thumbs/wall-e.jpg" alt="Montréal, QC, Canada" data-large-src="images/slides/wall-e.jpg" data-description="Eiffel Tower and Champ de Mars"/></li>
-							<li>
-								<img src="images/thumbs/up-official-trailer-fake.jpg" alt="Shanghai, China" data-large-src="images/slides/up-official-trailer-fake.jpg" data-description="Shanghai ,chaina">
-							</li>
-
-
+							<?php echo get_images($access_token); ?>
 						</ul>
 					</div>
 					
@@ -170,23 +169,14 @@
 				<div class="clearfix sidebar_container floatright">
 				
 					<div class="clearfix newsletter">
-						<form>
-							<h2>Signup for newsletter</h2>
-							<input type="text" placeholder="Name" id="mce-TEXT"/>
-							<input type="email" placeholder="Name" id="mce-EMAIL"/>
-							<input type="submit" value="Submit" id="mc-embedded-subscribe"/>
-						</form>
+						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsntiitk%2F&tabs&width=280&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1600505566929296" width="280" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 					</div>
 					<div class="clearfix sidebar">
 						<div class="clearfix single_sidebar">
 							<div class="popular_post">
 								<div class="sidebar_title"><h2>Latest News</h2></div>
 								<ul>
-									<li><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></li>
-									<li><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></li>
-									<li><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></li>
-									<li><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></li>
-									<li><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></li>
+									<?php echo get_news($access_token);?>
 								</ul>
 							</div>
 							</div>
