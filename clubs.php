@@ -32,8 +32,8 @@
 			<div class="wrapper header">
 				<div class="clearfix header_top">
 					<div class="clearfix logo floatleft">
-						<!--<img src="http://students.iitk.ac.in/gymkhana/img/logo_snt.jpg">-->
-						<a href=""><h1><span>Science and Technology Council</span> IIT Kanpur</h1></a>
+						
+						<a href="index.php"><img src="http://students.iitk.ac.in/gymkhana/img/logo_snt.jpg"><h1><span>Science and Technology Council</span> IIT Kanpur</h1></a>
 					</div>
 					<div class="clearfix search floatright">
 						<form>
@@ -43,31 +43,17 @@
 					</div>
 				</div>
 				<div class="header_bottom">
+					
 					<nav>
 						<ul id="nav">
-							<li><a href="">Home</a></li>
-							<li><a href="clubs.html">Clubs</a></li>
-							<li id="dropdown"><a href="">Drop Down</a>
-								<ul>
-									<li><a href="">Home</a></li>
-									<li><a href="">Clubs</a></li>
-									<li><a href="">Category</a></li>
-									<li><a href="">Category</a></li>
-									<li><a href="">Category</a></li>
-									<li><a href="">Category</a></li>
-									<li><a href="">Category</a></li>
-									<li><a href="">Category</a></li>
-									<li><a href="">Category</a></li>
-									<li><a href="">About us</a></li>
-									<li><a href="">Contact us</a></li>
-								</ul>
-							</li>
-							<li><a href="">Blog</a></li>
-							<li><a href="">Wiki</a></li>
-							<li><a href="">Events</a></li>
-							<li><a href="">Contact</a></li>
-							<li><a href="">About us</a></li>
-							<li><a href="">Feedback</a></li>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="clubs.php">Clubs</a></li>
+							<li><a href="http://iitk.ac.in/snt/blog/">Blog</a></li>
+							<li><a href="http://students.iitk.ac.in/projects/wiki/doku.php">Wiki</a></li>
+							<li><a href="events.php">Events</a></li>
+							<li><a href="contact.php">Contact</a></li>
+							<li><a href="about.php">About us</a></li>
+							<li><a href="feedback.php">Feedback</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -230,21 +216,12 @@
 					
 				</div>
 				<div class="clearfix sidebar_container floatright">
-				
-					<div class="clearfix newsletter">
-						<form>
-							<h2>Signup for newsletter</h2>
-							<input type="text" placeholder="Name" id="mce-TEXT"/>
-							<input type="email" placeholder="Name" id="mce-EMAIL"/>
-							<input type="submit" value="Submit" id="mc-embedded-subscribe"/>
-						</form>
-					</div>
 					<div class="clearfix sidebar">
 						<div class="clearfix single_sidebar">
 							<div class="popular_post">
 								<div class="sidebar_title"><h2>Latest News</h2></div>
 								<ul>
-									<?php echo get_news($access_token);?>
+									<?php echo get_news($access_token,15);?>
 								</ul>
 							</div>
 							</div>

@@ -1,7 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php
 	include 'scrape.php';
 ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <!--
@@ -63,104 +63,88 @@
 		<section id="content_area">
 			<div class="clearfix wrapper main_content_area">
 			
-				<div class="clearfix main_content floatleft">
-				
-					<div class="clearfix slider">
-						<ul class="pgwSlider">
-							<?php echo get_images($access_token); ?>
-						</ul>
-					</div>
-					
+				<div class="clearfix main_content floatleft">					
 					<div class="clearfix content">
-						<div class="content_title"><h2>Latest Blog Post</h2></div>
+						<div class="content_title"><h2>Our Clubs and Hobby Groups</h2></div>
 						
 						<div class="clearfix single_content">
-							<div class="clearfix post_date floatleft">
-								<div class="date">
-									<h3>27</h3>
-									<p>January</p>
-								</div>
-							</div>
 							<div class="clearfix post_detail">
-								<h2><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></h2>
-								<div class="clearfix post-meta">
-									<p><span><i class="fa fa-user"></i> Admin</span> <span><i class="fa fa-clock-o"></i> 20 Jan 2014</span> <span><i class="fa fa-comment"></i> 4 comments</span> <span><i class="fa fa-folder"></i> Category</span></p>
-								</div>
+								<h2><a href="">SnT Pavillion</a></h2>								
 								<div class="clearfix post_excerpt">
 									<img src="images/thumb.png" alt=""/>
-									<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a 
-									ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class 
-									aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos </p>
+									<p>
+										The Sci-Tech Pavillion is organised during the orientation period of the new batch. Various projects that were done under the clubs during the summers and during the previous year are displayed to strike interest in the new batch and to make them aware of the fact that there is so much to learn at IIT Kanpur aside from the academics.
+									</p>
 								</div>
-								<a href="">Continue Reading</a>
 							</div>
 						</div>
-						
 						<div class="clearfix single_content">
-							<div class="clearfix post_date floatleft">
-								<h3>27</h3>
-								<p>January</p>
-							</div>
 							<div class="clearfix post_detail">
-								<h2><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></h2>
-								<div class="clearfix post-meta">
-									<p><span>Admin</span> <span>20 Jan 2014</span> <span>4 comments</span> <span>Category</span></p>
-								</div>
+								<h2><a href="">Astronomy Club</a></h2>								
 								<div class="clearfix post_excerpt">
 									<img src="images/thumb.png" alt=""/>
-									<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a 
-									ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class 
-									aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos </p>
+									<p>
+										The club is a platform for people to nurture their interest in astronomy. The main aim of the club is to promote amateur astronomy and popularise in the  institute.The club has about 20 members who regularly meet fortnightly to discuss the activities of the club.We organize night long Star Parties for the campus residents twice a month. They are usually held at the terrace of the Student's Activity Centre (SAC). Apart from this we organize frequent lectures and talks by students,faculty and other renowned institutions like IUCAA, IIA etc.All interested people are most welcome to join our club.
+									</p>
 								</div>
-								<a href="">Continue Reading</a>
 							</div>
 						</div>
-						
 						<div class="clearfix single_content">
-							<div class="clearfix post_date floatleft">
-								<h3>27</h3>
-								<p>January</p>
-							</div>
 							<div class="clearfix post_detail">
-								<h2><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></h2>
-								<div class="clearfix post-meta">
-									<p><span>Admin</span> <span>20 Jan 2014</span> <span>4 comments</span> <span>Category</span></p>
-								</div>
+								<h2><a href="">Introductory Lecture series</a></h2>								
 								<div class="clearfix post_excerpt">
 									<img src="images/thumb.png" alt=""/>
-									<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a 
-									ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class 
-									aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos </p>
-								</div>
-								<a href="">Continue Reading</a>
+									<p>
+										Lecture Series are held by various clubs that introduce the new students to the clubs and make them interested in learning about them. Some clubs also organise workshops to help students try out what was taught in the lectures. Such lecture series are conducted throughout the year to introduce advanced topics and also to  update the students on the old ones.
+									</p>
+								</div>					
 							</div>
-						</div>						
+						</div>
+						<div class="clearfix single_content">
+							<div class="clearfix post_detail">
+								<h2><a href="">Sci-Tech Day</a></h2>								
+								<div class="clearfix post_excerpt">
+									<img src="images/thumb.png" alt=""/>
+									<p>
+										SciTech Day celebrates the culmination of the last year work done by the council.The IITk Junta gets to know the council through the council through the various projects which will be put on display in the exhibition.Every club of the council showcases their best projects from various fields, ranging from electronics and astronomy to business models.
+									</p>
+								</div>								
+							</div>
+						</div>
+						<div class="clearfix single_content">
+							<div class="clearfix post_detail">
+								<h2><a href="">Takneek</a></h2>								
+								<div class="clearfix post_excerpt">
+									<img src="images/thumb.png" alt=""/>
+									<p>
+										The Inter-Hall Sci-Tech Fest which sees massive participation from the freshmen has various competitions , lecture series, talks and workshops spread throughout the weekend. It is the first platform provided to the new batch to prove their mettle.
+									</p>
+								</div>
+								<a href="http://students.iitk.ac.in/takneek" target="_blank">Go to Website</a>
+							</div>
+						</div>
+						<div class="clearfix single_content">
+							<div class="clearfix post_detail">
+								<h2><a href="">Techkriti</a></h2>								
+								<div class="clearfix post_excerpt">
+									<img src="images/thumb.png" alt=""/>
+									<p>
+										IIT Kanpur's annual Inter -collegiate Science and Technology festival  Techkriti , renowned for the use of intellectual proficiency as ammunition.  Competitions reveal one's true mettle and at the end of it all, only the best is the last man standing. The diversity of competitions gives all a chance to prove their potential - from innovative business plans to exotic software solutions to erudite electronic gizmos to robust robots.
+									</p>
+								</div>
+								<a href="http://www.techkriti.org/">Go to Website</a>
+							</div>
+						</div>
 					</div>
 					
-					<div class="pagination">
-						<nav>
-							<ul>
-								<li><a href=""> << </a></li>
-								<li><a href="">1</a></li>
-								<li><a href="">2</a></li>
-								<li><a href="">3</a></li>
-								<li><a href="">4</a></li>
-								<li><a href=""> >> </a></li>
-							</ul>
-						</nav>
-					</div>
 				</div>
 				<div class="clearfix sidebar_container floatright">
-				
-					<div class="clearfix newsletter">
-						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsntiitk%2F&tabs&width=280&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1600505566929296" width="280" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-					</div>
 					<div class="clearfix sidebar">
 						<div class="clearfix single_sidebar">
 							<div class="popular_post">
 								<div class="sidebar_title"><h2>Latest News</h2></div>
 								<ul>
-									<?php echo get_news($access_token,10);?>
+									<?php echo get_news($access_token,15);?>
 								</ul>
 							</div>
 							</div>
@@ -187,7 +171,7 @@
 							<li><a href="http://students.iitk.ac.in/eclub" target="_blank"><span>Electronics Club</span></a></li>
 							<li><a href="http://students.iitk.ac.in/glidingclub/"><span>Gliding Club</span></a></li>
 							<li><a href="http://students.iitk.ac.in/hamclub" target="_blank"><span>HAM Club</span></a></li>
-							<li><a href="http://pclub.in/"><span>Programming Club</span></a></li>
+							<li><a href="http://172.31.76.112"><span>Programming Club</span></a></li>
 							<li><a href="http://students.iitk.ac.in/robocon/"><span>Robocon, IITK</span></a></li>
 							<li><a href="http://students.iitk.ac.in/roboclub"><span>Robotics Club</span></a></li>
 							<li><a href="http://students.iitk.ac.in/rubikscube/"><span>Rubik's Cube Hobby Group</span></a></li>

@@ -1,7 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php
 	include 'scrape.php';
 ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <!--
@@ -63,104 +63,33 @@
 		<section id="content_area">
 			<div class="clearfix wrapper main_content_area">
 			
-				<div class="clearfix main_content floatleft">
-				
-					<div class="clearfix slider">
-						<ul class="pgwSlider">
-							<?php echo get_images($access_token); ?>
-						</ul>
-					</div>
-					
+				<div class="clearfix main_content floatleft">					
 					<div class="clearfix content">
-						<div class="content_title"><h2>Latest Blog Post</h2></div>
+						<div class="contact_us">
 						
-						<div class="clearfix single_content">
-							<div class="clearfix post_date floatleft">
-								<div class="date">
-									<h3>27</h3>
-									<p>January</p>
-								</div>
-							</div>
-							<div class="clearfix post_detail">
-								<h2><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></h2>
-								<div class="clearfix post-meta">
-									<p><span><i class="fa fa-user"></i> Admin</span> <span><i class="fa fa-clock-o"></i> 20 Jan 2014</span> <span><i class="fa fa-comment"></i> 4 comments</span> <span><i class="fa fa-folder"></i> Category</span></p>
-								</div>
-								<div class="clearfix post_excerpt">
-									<img src="images/thumb.png" alt=""/>
-									<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a 
-									ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class 
-									aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos </p>
-								</div>
-								<a href="">Continue Reading</a>
-							</div>
+							<h1>Contact us</h1>
+							
+							<p>For any queries or problems, write to us.</p>
+							
+							<form>
+								<p><input type="text" class="wpcf7-text" placeholder="Full Name*"/></p>
+								<p><input type="text" class="wpcf7-email" placeholder="Email*"/></p>
+								<p><input type="text" class="wpcf7-text" placeholder="Subject*"/></p>
+								<p><textarea class="wpcf7-textarea" placeholder="Message*"></textarea></p>
+								<p><input type="Submit" class="wpcf7-submit" value="Submit"/></p>
+							</form>
+							
 						</div>
-						
-						<div class="clearfix single_content">
-							<div class="clearfix post_date floatleft">
-								<h3>27</h3>
-								<p>January</p>
-							</div>
-							<div class="clearfix post_detail">
-								<h2><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></h2>
-								<div class="clearfix post-meta">
-									<p><span>Admin</span> <span>20 Jan 2014</span> <span>4 comments</span> <span>Category</span></p>
-								</div>
-								<div class="clearfix post_excerpt">
-									<img src="images/thumb.png" alt=""/>
-									<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a 
-									ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class 
-									aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos </p>
-								</div>
-								<a href="">Continue Reading</a>
-							</div>
-						</div>
-						
-						<div class="clearfix single_content">
-							<div class="clearfix post_date floatleft">
-								<h3>27</h3>
-								<p>January</p>
-							</div>
-							<div class="clearfix post_detail">
-								<h2><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></h2>
-								<div class="clearfix post-meta">
-									<p><span>Admin</span> <span>20 Jan 2014</span> <span>4 comments</span> <span>Category</span></p>
-								</div>
-								<div class="clearfix post_excerpt">
-									<img src="images/thumb.png" alt=""/>
-									<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a 
-									ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class 
-									aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos </p>
-								</div>
-								<a href="">Continue Reading</a>
-							</div>
-						</div>						
 					</div>
 					
-					<div class="pagination">
-						<nav>
-							<ul>
-								<li><a href=""> << </a></li>
-								<li><a href="">1</a></li>
-								<li><a href="">2</a></li>
-								<li><a href="">3</a></li>
-								<li><a href="">4</a></li>
-								<li><a href=""> >> </a></li>
-							</ul>
-						</nav>
-					</div>
 				</div>
 				<div class="clearfix sidebar_container floatright">
-				
-					<div class="clearfix newsletter">
-						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsntiitk%2F&tabs&width=280&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1600505566929296" width="280" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-					</div>
 					<div class="clearfix sidebar">
 						<div class="clearfix single_sidebar">
 							<div class="popular_post">
 								<div class="sidebar_title"><h2>Latest News</h2></div>
 								<ul>
-									<?php echo get_news($access_token,10);?>
+									<?php echo get_news($access_token,15);?>
 								</ul>
 							</div>
 							</div>
@@ -187,7 +116,7 @@
 							<li><a href="http://students.iitk.ac.in/eclub" target="_blank"><span>Electronics Club</span></a></li>
 							<li><a href="http://students.iitk.ac.in/glidingclub/"><span>Gliding Club</span></a></li>
 							<li><a href="http://students.iitk.ac.in/hamclub" target="_blank"><span>HAM Club</span></a></li>
-							<li><a href="http://pclub.in/"><span>Programming Club</span></a></li>
+							<li><a href="http://172.31.76.112"><span>Programming Club</span></a></li>
 							<li><a href="http://students.iitk.ac.in/robocon/"><span>Robocon, IITK</span></a></li>
 							<li><a href="http://students.iitk.ac.in/roboclub"><span>Robotics Club</span></a></li>
 							<li><a href="http://students.iitk.ac.in/rubikscube/"><span>Rubik's Cube Hobby Group</span></a></li>

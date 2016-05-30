@@ -37,7 +37,7 @@
 		return $img_result;	
 	}
 
-	function get_news($access_token){
+	function get_news($access_token,$num_result){
 		$fields = "id,object_id,story,link,status_type,message";
 		$fb_page_id = "187308721378592";
 
@@ -53,7 +53,7 @@
 		$alt_text = "Science and Technology Council,IITK shared a photo";
 		$error = "";
 
-		for ($i=0; $i < 10 && $i < $album_count ; $i++) { 
+		for ($i=0; $i < $num_result && $i < $album_count ; $i++) { 
 
 			$id = isset($obj['data'][$i]['id'])? $obj['data'][$i]['id']:"";
 			$object_id = isset($obj['data'][$i]['object_id'])? $obj['data'][$i]['object_id']:$id;
