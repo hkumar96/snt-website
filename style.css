@@ -4,7 +4,7 @@ Template URI: http://www.wpfreeware.com/yellow-blog/
 Author: WpFreeware
 Author URI: http://www.wpfreeware.com
 Description: A Pro bloging responsive website template
-Version: 1.0 
+Version: 1.0
 License: GPL 2.0 or Later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,9 +21,9 @@ h1,h2,h3,h4,h5,h6{font-weight:normal;margin:0 0 15px;font-family: 'Oswald', sans
 h2 {font-size:25px;line-height:30px}
 img{max-width:100%;height:auto;border:none}
 
-.alignleft{float:left;margin-right:10px}	
-.aligncenter{display:block;margin:10px auto}	
-.alignright{float:right;margin-left:10px}	
+.alignleft{float:left;margin-right:10px}
+.aligncenter{display:block;margin:10px auto}
+.alignright{float:right;margin-left:10px}
 
 .floatleft{float:left}
 .floatright{float:right}
@@ -45,8 +45,8 @@ border-top: 5px solid #406DEB;}
 .header{}
 .header_top{padding: 15px 0;}
 .logo{}
-.logo a{}
-.logo a h1{color: #fff;
+.logo a{color: #FFF}
+.logo a h1{color: #FFF);
 font-family: oswald;
 font-size: 30px;
 font-weight: bold;

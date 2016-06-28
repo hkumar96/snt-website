@@ -1,63 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php
 	include 'scrape.php';
-	include 'dbconn.php';
-	$sql = "SELECT * FROM article ORDER BY pub_date DESC";
-	$retval = mysql_query($sql,$conn);
-	$result = "";
-	while($row = mysql_fetch_assoc($retval)){
-		$post_id = $row['id'];
-		$user_id = $row['user_id'];
-		$query = "SELECT name FROM users WHERE id={$user_id}";
-		//echo "$query";
-		$user = mysql_fetch_assoc(mysql_query($query,$conn));
-		$username = $user['name'];
-		$timestamp = strtotime($row['pub_date']);
-		//echo $timestamp;
-		$title = $row['title'];
-		$content = $row['content'];
-		$date = getdate($timestamp);
-		//echo $mydate;
-		//var_dump($date);
-		$result .= "<div class='clearfix single_content'>\n";
-		$result .= "<div class='clearfix post_date floatleft'>\n";
-		$result .= "<div class='date'>\n";
-		$result .= "<h3>{$date['mday']}</h3>\n";
-		$result .= "<p>{$date['month']}</p>\n";
-		$result .= "</div>\n</div>";
-		$result .= "<div class='clearfix post_detail'>\n";
-		$result .= "<h2><a href=''>{$title} </a></h2>\n";
-		$result .= "<div class='clearfix post-meta'>\n";
-		$result .= "<p><span><i class='fa fa-user'></i>{$username}<span><span><i class='fa fa-clock-o'></i>{$date['mday']} {$date['month']} {$date['year']}</span></p>";
-		$result .= "</div>";
-		$result .= "<div class='clearfix post_excerpt'>\n<img src='images/thumb.png' alt=''/>";
-		$result .= "<p>{$content}</p>";
-		$result .= "</div>";
-		$result .= "<a href='single.php?id={$post_id}'>Continue Reading</a>\n</div>\n</div>";
-		// <div class="clearfix single_content">
-		// 	<div class="clearfix post_date floatleft">
-		// 		<div class="date">
-		// 			<h3>27</h3>
-		// 			<p>January</p>
-		// 		</div>
-		// 	</div>
-		// 	<div class="clearfix post_detail">
-		// 		<h2><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></h2>
-		// 		<div class="clearfix post-meta">
-		// 			<p><span><i class="fa fa-user"></i> Admin</span> <span><i class="fa fa-clock-o"></i> 20 Jan 2014</span> <span><i class="fa fa-comment"></i> 4 comments</span> <span><i class="fa fa-folder"></i> Category</span></p>
-		// 		</div>
-		// 		<div class="clearfix post_excerpt">
-		// 			<img src="images/thumb.png" alt=""/>
-		// 			<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-		// 			ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class
-		// 			aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos </p>
-		// 		</div>
-		// 		<a href="">Continue Reading</a>
-		// 	</div>
-		// </div>
-
-		//echo $username;
-	}
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
@@ -74,7 +17,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!--Oswald Font -->
 		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-
 		<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 		<!-- home slider-->
 		<link href="css/pgwslider.css" rel="stylesheet">
@@ -107,7 +49,6 @@
 					<nav>
 						<ul id="nav">
 							<li><a href="index.php">Home</a></li>
-							<li><a href="about.php">About us</a></li>
 							<li id = "dropdown">
 								<a href="">Clubs and Hobby groups</a>
 								<ul>
@@ -140,11 +81,11 @@
 
 								</ul>
 							</li>
-							<li><a href="blog.php">Blog</a></li>
+							<li><a href="http://iitk.ac.in/snt/blog/">Blog</a></li>
 							<li><a href="http://wiki.junta.iitk.ac.in/">Wiki</a></li>
 							<li><a href="contact.php">Contact</a></li>
+							<li><a href="about.php">About us</a></li>
 							<li><a href="feedback.php">Feedback</a></li>
-							<li><a href="login.php">Login</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -156,15 +97,30 @@
 
 				<div class="clearfix main_content floatleft">
 
-					<div class="clearfix slider">
-						<ul class="pgwSlider">
-							<?php echo get_images($access_token); ?>
-						</ul>
-					</div>
-
 					<div class="clearfix content">
 						<div class="content_title"><h2>Latest Blog Post</h2></div>
-						<?php echo $result; ?>
+
+						<div class="clearfix single_content">
+							<div class="clearfix post_date floatleft">
+								<div class="date">
+									<h3>27</h3>
+									<p>January</p>
+								</div>
+							</div>
+							<div class="clearfix post_detail">
+								<h2><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></h2>
+								<div class="clearfix post-meta">
+									<p><span><i class="fa fa-user"></i> Admin</span> <span><i class="fa fa-clock-o"></i> 20 Jan 2014</span> <span><i class="fa fa-comment"></i> 4 comments</span> <span><i class="fa fa-folder"></i> Category</span></p>
+								</div>
+								<div class="clearfix post_excerpt">
+									<img src="images/thumb.png" alt=""/>
+									<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
+									ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class
+									aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos </p>
+								</div>
+								<a href="">Continue Reading</a>
+							</div>
+						</div>
 
 						<div class="clearfix single_content">
 							<div class="clearfix post_date floatleft">
@@ -222,9 +178,6 @@
 				</div>
 				<div class="clearfix sidebar_container floatright">
 
-					<div class="clearfix newsletter">
-						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsntiitk%2F&tabs&width=280&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1600505566929296" width="280" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-					</div>
 					<div class="clearfix sidebar">
 						<div class="clearfix single_sidebar">
 							<div class="popular_post">

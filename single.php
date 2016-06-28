@@ -1,63 +1,129 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php
-	include 'scrape.php';
-	include 'dbconn.php';
-	$sql = "SELECT * FROM article ORDER BY pub_date DESC";
-	$retval = mysql_query($sql,$conn);
-	$result = "";
-	while($row = mysql_fetch_assoc($retval)){
-		$post_id = $row['id'];
+include 'scrape.php';
+include 'dbconn.php';
+//echo "checklogin";
+if(isset($_GET['id'])){
+	//echo "string1";
+	$post_id = is_numeric($_GET['id'])?$_GET['id']:1;
+	$query = "SELECT user_id,title,content,pub_date FROM article WHERE id ={$post_id}; ";
+	$retval = mysql_query($query,$conn);
+	if($retval){
+		$row = mysql_fetch_assoc($retval);
 		$user_id = $row['user_id'];
-		$query = "SELECT name FROM users WHERE id={$user_id}";
+		$sql = "SELECT name FROM users WHERE id={$user_id}";
 		//echo "$query";
-		$user = mysql_fetch_assoc(mysql_query($query,$conn));
+		$user = mysql_fetch_assoc(mysql_query($sql,$conn));
 		$username = $user['name'];
 		$timestamp = strtotime($row['pub_date']);
-		//echo $timestamp;
 		$title = $row['title'];
 		$content = $row['content'];
 		$date = getdate($timestamp);
-		//echo $mydate;
-		//var_dump($date);
-		$result .= "<div class='clearfix single_content'>\n";
-		$result .= "<div class='clearfix post_date floatleft'>\n";
-		$result .= "<div class='date'>\n";
-		$result .= "<h3>{$date['mday']}</h3>\n";
-		$result .= "<p>{$date['month']}</p>\n";
-		$result .= "</div>\n</div>";
-		$result .= "<div class='clearfix post_detail'>\n";
-		$result .= "<h2><a href=''>{$title} </a></h2>\n";
-		$result .= "<div class='clearfix post-meta'>\n";
-		$result .= "<p><span><i class='fa fa-user'></i>{$username}<span><span><i class='fa fa-clock-o'></i>{$date['mday']} {$date['month']} {$date['year']}</span></p>";
+		$result = "";
+		$result .= "<div class='clearfix content'>\n";
+		$result .= "<h1>{$title} </h1>\n";
+		$result .= "<div class='clearfix post-meta'>";
+		$result .= "<p><span><i class='fa fa-user'></i> {$username}</span> <span><i class='fa fa-clock-o'></i> {$date['mday']} {$date['month']} {$date['year']}</span>";
 		$result .= "</div>";
-		$result .= "<div class='clearfix post_excerpt'>\n<img src='images/thumb.png' alt=''/>";
-		$result .= "<p>{$content}</p>";
-		$result .= "</div>";
-		$result .= "<a href='single.php?id={$post_id}'>Continue Reading</a>\n</div>\n</div>";
-		// <div class="clearfix single_content">
-		// 	<div class="clearfix post_date floatleft">
-		// 		<div class="date">
-		// 			<h3>27</h3>
-		// 			<p>January</p>
+		$result .= "<p>$content</p></div>";
+
+		// <div class="clearfix content">
+		//
+		// 	<h1>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis </h1>
+		// 	<div class="clearfix post-meta">
+		// 		<p><span><i class="fa fa-user"></i> Admin</span> <span><i class="fa fa-clock-o"></i> 20 Jan 2014</span> <span><i class="fa fa-comment"></i> 4 comments</span> <span><i class="fa fa-folder"></i> Category</span></p>
+		// 	</div>
+		//
+		// 	<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
+		// 	ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class
+		// 	aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos Sed non  mauris vitae erat consequat auctor eu in elit. Class
+		// 	aptent taciti sociosqu</p>
+		//
+		// 	<div class="rectangle_large aligncenter"></div>
+		//
+		//
+		// 	<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
+		// 	ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class
+		// 	aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos Sed non  mauris vitae erat consequat auctor eu in elit. Class
+		// 	aptent taciti sociosqu</p>
+		// 	<div class="rectangle_medium aligncenter"></div>
+		//
+		// 	<blockquote>
+		// 		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+		// 		<span>Antorjal alin</span>
+		// 	</blockquote>
+		//
+		// 	<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
+		// 	ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class
+		// 	aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos Sed non  mauris vitae erat consequat auctor eu in elit. Class
+		// 	aptent taciti sociosqu</p>
+		//
+		// 	<h3>Feature Options</h3>
+		// 	<ul>
+		// 		<li>dummy text of the printing and typesetting</li>
+		// 		<li>dummy text of the printing and typesetting</li>
+		// 		<li>dummy text of the printing and typesetting</li>
+		// 		<li>dummy text of the printing and typesetting</li>
+		// 		<li>dummy text of the printing and typesetting</li>
+		// 		<li>dummy text of the printing and typesetting</li>
+		//
+		// 	</ul>
+		//
+		// 	<h4>List items with anchor text</h4>
+		// 	<ul>
+		// 		<li><a href="">dummy text of the printing and typesetting</a></li>
+		// 		<li><a href="">dummy text of the printing and typesetting</a></li>
+		// 		<li><a href="">dummy text of the printing and typesetting</a></li>
+		// 		<li><a href="">dummy text of the printing and typesetting</a></li>
+		// 		<li><a href="">dummy text of the printing and typesetting</a></li>
+		// 		<li><a href="">dummy text of the printing and typesetting</a></li>
+		// 	</ul>
+		//
+		// 	<div class="more_post_container">
+		// 		<h2>You may Also like:</h2>
+		// 		<div class="more_post">
+		// 			<a href="">Lorem Ipsum is simply dummy text of the printing</a>
+		// 			<a href="">Lorem Ipsum is simply dummy text of the printing</a>
+		// 			<a href="">Lorem Ipsum is simply dummy text of the printing</a>
 		// 		</div>
 		// 	</div>
-		// 	<div class="clearfix post_detail">
-		// 		<h2><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></h2>
-		// 		<div class="clearfix post-meta">
-		// 			<p><span><i class="fa fa-user"></i> Admin</span> <span><i class="fa fa-clock-o"></i> 20 Jan 2014</span> <span><i class="fa fa-comment"></i> 4 comments</span> <span><i class="fa fa-folder"></i> Category</span></p>
+		//
+		// 	<div class="advertisement_container">
+		// 		<div class="advertisement">
+		//
 		// 		</div>
-		// 		<div class="clearfix post_excerpt">
-		// 			<img src="images/thumb.png" alt=""/>
-		// 			<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-		// 			ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class
-		// 			aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos </p>
-		// 		</div>
-		// 		<a href="">Continue Reading</a>
 		// 	</div>
+		//
+		// 	<a class="btn" href="">Preview</a>
+		// 	<a class="btn" href="">Download</a>
+		//
 		// </div>
 
-		//echo $username;
+		//echo $timestamp;
 	}
+
+	if(isset($_POST['title']) && isset($_POST['content'])){
+		$title = $_POST['title'];
+		$content = $_POST['content'];
+		$title = stripslashes($title);
+		$content = stripslashes($content);
+		$title = mysql_real_escape_string($title);
+		$content = mysql_real_escape_string($content);
+		//echo "$title";
+		$username = $_SESSION['login_user'];
+		$query = "SELECT id FROM users WHERE username = {$username}";
+		$retval = mysql_query($query,$conn);
+		//echo "$query".mysql_error();
+		//var_dump($retval);
+		$row = mysql_fetch_assoc($retval);
+		//var_dump($row);
+		$user_id = $row['id'];
+		//echo $user_id;
+		$sql = "INSERT INTO article (user_id,title,content) VALUES ({$user_id},'{$title}','{$content}')";
+		mysql_query($sql,$conn);
+
+	}
+}
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
@@ -156,69 +222,8 @@
 
 				<div class="clearfix main_content floatleft">
 
-					<div class="clearfix slider">
-						<ul class="pgwSlider">
-							<?php echo get_images($access_token); ?>
-						</ul>
-					</div>
 
-					<div class="clearfix content">
-						<div class="content_title"><h2>Latest Blog Post</h2></div>
-						<?php echo $result; ?>
-
-						<div class="clearfix single_content">
-							<div class="clearfix post_date floatleft">
-								<h3>27</h3>
-								<p>January</p>
-							</div>
-							<div class="clearfix post_detail">
-								<h2><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></h2>
-								<div class="clearfix post-meta">
-									<p><span>Admin</span> <span>20 Jan 2014</span> <span>4 comments</span> <span>Category</span></p>
-								</div>
-								<div class="clearfix post_excerpt">
-									<img src="images/thumb.png" alt=""/>
-									<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-									ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class
-									aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos </p>
-								</div>
-								<a href="">Continue Reading</a>
-							</div>
-						</div>
-
-						<div class="clearfix single_content">
-							<div class="clearfix post_date floatleft">
-								<h3>27</h3>
-								<p>January</p>
-							</div>
-							<div class="clearfix post_detail">
-								<h2><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></h2>
-								<div class="clearfix post-meta">
-									<p><span>Admin</span> <span>20 Jan 2014</span> <span>4 comments</span> <span>Category</span></p>
-								</div>
-								<div class="clearfix post_excerpt">
-									<img src="images/thumb.png" alt=""/>
-									<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-									ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class
-									aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos </p>
-								</div>
-								<a href="">Continue Reading</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="pagination">
-						<nav>
-							<ul>
-								<li><a href=""> << </a></li>
-								<li><a href="">1</a></li>
-								<li><a href="">2</a></li>
-								<li><a href="">3</a></li>
-								<li><a href="">4</a></li>
-								<li><a href=""> >> </a></li>
-							</ul>
-						</nav>
-					</div>
+					<?php echo $result; ?>
 				</div>
 				<div class="clearfix sidebar_container floatright">
 
