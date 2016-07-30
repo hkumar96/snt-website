@@ -9,7 +9,7 @@
 ---- This is the main file (index.html).
 ---- You are allowed to change anything you like. Find out more Awesome Templates @ wpfreeware.com
 ---- Read License-readme.txt file to learn more.
--->	
+-->
 
 	<head>
 		<title>Science and Technology Council IIT Kanpur</title>
@@ -22,18 +22,20 @@
 		<link href="css/pgwslider.css" rel="stylesheet">
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link href="style.css" rel="stylesheet" media="screen">	
-		<link href="responsive.css" rel="stylesheet" media="screen">		
+		<link href="style.css" rel="stylesheet" media="screen">
+		<link href="responsive.css" rel="stylesheet" media="screen">
 	</head>
 
 	<body>
-	
+
 		<section id="header_area">
 			<div class="wrapper header">
 				<div class="clearfix header_top">
+					<div class  = "logo clearfix floatleft">
+						<img src="http://students.iitk.ac.in/gymkhana/img/logo_snt.jpg">
+					</div>
 					<div class="clearfix logo floatleft">
-						
-						<a href="index.php"><img src="http://students.iitk.ac.in/gymkhana/img/logo_snt.jpg"><h1><span>Science and Technology Council</span> IIT Kanpur</h1></a>
+						<a href="index.php"><h1><span>Science and Technology Council</span><br> IIT Kanpur</h1></a>
 					</div>
 					<div class="clearfix search floatright">
 						<form>
@@ -43,34 +45,64 @@
 					</div>
 				</div>
 				<div class="header_bottom">
-					
+
 					<nav>
 						<ul id="nav">
 							<li><a href="index.php">Home</a></li>
-							<li><a href="clubs.php">Clubs</a></li>
-							<li><a href="http://iitk.ac.in/snt/blog/">Blog</a></li>
-							<li><a href="http://students.iitk.ac.in/projects/wiki/doku.php">Wiki</a></li>
-							<li><a href="events.php">Events</a></li>
-							<li><a href="contact.php">Contact</a></li>
 							<li><a href="about.php">About us</a></li>
+							<li id = "dropdown">
+								<a href="">Clubs and Hobby groups</a>
+								<ul>
+									<li><a href="http://students.iitk.ac.in/aeromodelling" target="_blank"><span>Aeromodelling Club</span></a></li>
+									<li><a href="http://students.iitk.ac.in/astronomy" target="_blank"><span>Astronomy Club</span></a></li>
+									<li><a href="http://students.iitk.ac.in/brain" target="_blank"><span>BRaIN</span></a></li>
+									<li><a href="http://students.iitk.ac.in/snt/bclub" target="_blank"><span>Business Club</span></a></li>
+									<li><a href="http://students.iitk.ac.in/eclub" target="_blank"><span>Electronics Club</span></a></li>
+									<li><a href="http://students.iitk.ac.in/glidingclub/"><span>Gliding Club</span></a></li>
+									<!-- <li><a href="http://students.iitk.ac.in/hamclub" target="_blank"><span>HAM Club</span></a></li> -->
+									<li><a href="http://pclub.in/"><span>Programming Club</span></a></li>
+									<li><a href="http://students.iitk.ac.in/roboclub"><span>Robotics Club</span></a></li>
+									<li><a href="http://students.iitk.ac.in/rubikscube/"><span>Rubik's Cube Hobby Group</span></a></li>
+
+								</ul>
+							</li>
+							<li id = "dropdown">
+								<a href = "">Teams</a>
+								<ul>
+									<li><a href="http://students.iitk.ac.in/roboclub/auv/" target="_blank"><span>AUV</span></a></li>
+									<li><a href="http://students.iitk.ac.in/robocon/"><span>Robocon, IITK</span></a></li>
+									<li><a href="http://www.iitk.ac.in/ame/sae/" target="_blank"><span>SAE,IIT Kanpur</span></a></li>
+								</ul>
+							</li>
+							<li id = "dropdown">
+								<a href = "">Centres and facilities</a>
+								<ul>
+									<li><a href="http://www.iitk.ac.in/cw/" target="_blank"><span>Tinkering Lab-Central workshop</span></a></li>
+									<li><a href="http://www.iitk.ac.in/4ilab/"><span>4-i lab</span></a></li>
+
+								</ul>
+							</li>
+							<!-- <li><a href="blog.php">Blog</a></li> -->
+							<li><a href="http://wiki.junta.iitk.ac.in/">Wiki</a></li>
+							<li><a href="contact.php">Contact</a></li>
 							<li><a href="feedback.php">Feedback</a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</section>
-		
+
 		<section id="content_area">
 			<div class="clearfix wrapper main_content_area">
-			
-				<div class="clearfix main_content floatleft">					
+
+				<div class="clearfix main_content floatleft">
 					<div class="clearfix content">
 						<div class="contact_us">
-						
+
 							<h1>Contact us</h1>
-							
+
 							<p>For any queries or problems, write to us.</p>
-							
+
 							<form>
 								<p><input type="text" class="wpcf7-text" placeholder="Full Name*"/></p>
 								<p><input type="text" class="wpcf7-email" placeholder="Email*"/></p>
@@ -78,10 +110,10 @@
 								<p><textarea class="wpcf7-textarea" placeholder="Message*"></textarea></p>
 								<p><input type="Submit" class="wpcf7-submit" value="Submit"/></p>
 							</form>
-							
+
 						</div>
 					</div>
-					
+
 				</div>
 				<div class="clearfix sidebar_container floatright">
 					<div class="clearfix sidebar">
@@ -97,12 +129,12 @@
 							<h2>Calendar</h2>
 							<iframe id="blockrandom" name="iframe" src="http://www.google.com/calendar/embed?src=sntsecy.iitk%40gmail.com&amp;ctz=Asia/Calcutta" height="400" width = "280" scrolling="auto" align="top" frameborder="0">
 	This option will not work correctly. Unfortunately, your browser does not support inline frames.</iframe>
-							</div>						
+							</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		
+
 		<section id="footer_top_area">
 			<div class="clearfix wrapper footer_top">
 				<div class="clearfix footer_top_container">
@@ -143,7 +175,7 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<section id="footer_bottom_area">
 			<div class="clearfix wrapper footer_bottom">
 				<div class="clearfix copyright floatleft">
@@ -163,9 +195,9 @@
 				</div>
 			</div>
 		</section>
-		
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>	
-		<script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>		
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('.tooltip').tooltipster();
@@ -178,25 +210,25 @@
 			  nested: true,
 			  indent: '-'
 			});
-		</script>		
+		</script>
 		<script src="js/pgwslider.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('.pgwSlider').pgwSlider({
-					
+
 					intervalDuration: 5000
-				
+
 				});
 			});
 		</script>
 		<script type="text/javascript" src="js/placeholder_support_IE.js"></script>
-		
+
 <!--
 ---- Clean html template by http://WpFreeware.com
 ---- This is the main file (index.html).
 ---- You are allowed to change anything you like. Find out more Awesome Templates @ wpfreeware.com
 ---- Read License-readme.txt file to learn more.
--->	
-		
+-->
+
 	</body>
 </html>

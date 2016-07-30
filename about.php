@@ -155,17 +155,21 @@
 
 				<div class="clearfix main_content floatleft">
 
-					<div class="clearfix slider">
-						<ul class="pgwSlider">
-							<?php echo get_images($access_token); ?>
-						</ul>
-					</div>
-
 					<div class="clearfix content">
-						<div class="content_title"><h2>Science and Technology Council</h2></div>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/1NvxV2qPbNc" frameborder="0" allowfullscreen></iframe>
+						<div class="content_title"><h2>About the council</h2></div>
+						<p>
+							Science and Technology Council is a part of Student's Gymkhana and provides opportunity and a platform for students to pursue their hobbies in field of science and technology.The Council currently comprises of 8 clubs and a Rubik's cube hobby group.
+						</p>
+						<p>
+							<h3>What is the council about?</h3>
+						</p>
+						<p>
+							An opportunity for you to explore for yourself the amazing world of technology, to innovate, to learn, to create, to try out new things and at the same time have loads and loads of fun. A place for you to realize your dream and develop the next killer technology! So what’s stopping you??...come and join us in our activities!
+						</p>
+						<p>
+							With the thought, “Imagination is more important than knowledge”, We, the Science and Technology Council compel each and everyone to think beyond the conventional boundaries, provide support, opportunity to help one unleash his imagination and an ideal platform to showcase one’s talent. We make things fly, we carve out mighty business plans, we build electronic gadgets, our own communication devices, we dare to stare deep into the sky not only to admire the cosmic wonder, but a lot more; we write our own codes, and yes we do make our own robots! Well, if by remote chance none of this is your cup of tea, then why not indulge in a game of fox hunt or simply enjoy a joyride on one of the gliders. There is surely something for everyone!
+						</p>
 					</div>
-
 				</div>
 				<div class="clearfix sidebar_container floatright">
 
