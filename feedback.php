@@ -139,24 +139,7 @@
 			<div class="clearfix wrapper footer_top">
 				<div class="clearfix footer_top_container">
 					<div class="clearfix single_footer_top floatleft">
-						<h2>Club Websites</h2>
-						<ul>
-							<li><a href="http://students.iitk.ac.in/aeromodelling" target="_blank"><span>Aeromodelling Club</span></a></li>
-							<li><a href="http://students.iitk.ac.in/astronomy" target="_blank"><span>Astronomy Club</span></a></li>
-							<li><a href="http://students.iitk.ac.in/brain" target="_blank"><span>BRaIN</span></a></li>
-							<li><a href="http://students.iitk.ac.in/snt/bclub" target="_blank"><span>Business Club</span></a></li>
-							<li><a href="http://students.iitk.ac.in/eclub" target="_blank"><span>Electronics Club</span></a></li>
-							<li><a href="http://students.iitk.ac.in/glidingclub/"><span>Gliding Club</span></a></li>
-							<li><a href="http://students.iitk.ac.in/hamclub" target="_blank"><span>HAM Club</span></a></li>
-							<li><a href="http://172.31.76.112"><span>Programming Club</span></a></li>
-							<li><a href="http://students.iitk.ac.in/robocon/"><span>Robocon, IITK</span></a></li>
-							<li><a href="http://students.iitk.ac.in/roboclub"><span>Robotics Club</span></a></li>
-							<li><a href="http://students.iitk.ac.in/rubikscube/"><span>Rubik's Cube Hobby Group</span></a></li>
-							<li><a href="http://www.iitk.ac.in/ame/sae/" target="_blank"><span>SAE,IIT Kanpur</span></a></li>
-						</ul>
-					</div>
-					<div class="clearfix single_footer_top floatleft">
-						<h2>Club Facebook pages</h2>
+						<h2>Club's Facebook pages</h2>
 						<ul>
 							<li><a href="https://www.facebook.com/groups/aeroclubiitk/" target="_blank"><span>Aeromodelling Club</span></a></li>
 							<li><a href="https://www.facebook.com/groups/astroclubiitk/" target="_blank"><span>Astronomy Club</span></a></li>
@@ -172,6 +155,16 @@
 							<li><a href="https://www.facebook.com/groups/iitkSAE/" target="_blank"><span>SAE, IITK</span></a></li>
 						</ul>
 					</div>
+					<div class="clearfix single_footer_top floatleft">
+						<h2>Quick Links</h2>
+						<ul>
+							<li><a href="https://www.youtube.com/user/sntiitk">Youtube channel</a></li>
+							<li><a href="http://techkriti.org/">Techkriti</a></li>
+							<li><a href="http://students.iitk.ac.in/gymkhana/">Students' Gymkhana</a></li>
+							<li><a href="http://students.iitk.ac.in/ss/home/">Students' Senate</a></li>
+						</ul>
+					</div>
+
 				</div>
 			</div>
 		</section>
@@ -179,20 +172,9 @@
 		<section id="footer_bottom_area">
 			<div class="clearfix wrapper footer_bottom">
 				<div class="clearfix copyright floatleft">
-					<p> Copyright &copy; All rights reserved by <span>Wpfreeware.com</span></p>
+					<p> Copyright &copy; All rights reserved by <span>SnT, IIT Kanpur</span></p>
 				</div>
-				<div class="clearfix social floatright">
-					<ul>
-						<li><a class="tooltip" title="Facebook" href=""><i class="fa fa-facebook-square"></i></a></li>
-						<li><a class="tooltip" title="Twitter" href=""><i class="fa fa-twitter-square"></i></a></li>
-						<li><a class="tooltip" title="Google+" href=""><i class="fa fa-google-plus-square"></i></a></li>
-						<li><a class="tooltip" title="LinkedIn" href=""><i class="fa fa-linkedin-square"></i></a></li>
-						<li><a class="tooltip" title="tumblr" href=""><i class="fa fa-tumblr-square"></i></a></li>
-						<li><a class="tooltip" title="Pinterest" href=""><i class="fa fa-pinterest-square"></i></a></li>
-						<li><a class="tooltip" title="RSS Feed" href=""><i class="fa fa-rss-square"></i></a></li>
-						<li><a class="tooltip" title="Sitemap" href=""><i class="fa fa-sitemap"></i> </a></li>
-					</ul>
-				</div>
+
 			</div>
 		</section>
 
