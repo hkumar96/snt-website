@@ -114,8 +114,8 @@
 							<div class="clearfix post_detail">
 								<h2><a href="">Head Council</a></h2>
 								<div class="clearfix post_excerpt">
-									<p> <b>Prashant Kumar</b> - <em>prshntk@iitk.ac.in</em> </p>
-									<p> <b>Rachit Aggarwal</b> - <em>rachitag@iitk.ac.in</em> </p>
+									<p> <b>Prashant Kumar</b> - <em>prshntk@iitk.ac.in</em> - <em>8090756661</em></p>
+									<p> <b>Rachit Aggarwal</b> - <em>rachitag@iitk.ac.in</em> - <em>7388428800</em> </p>
 								</div>
 							</div>
 						</div>
@@ -123,8 +123,8 @@
 							<div class="clearfix post_detail">
 								<h2><a href="">Tinkering Lab Executives</a></h2>
 								<div class="clearfix post_excerpt">
-									<p> <b>Jatin Agrawal</b> - <em>jatinag@iitk.ac.in</em> </p>
-									<p> <b>Tushar Agarwal</b> - <em>tushara@iitk.ac.in</em> </p>
+									<p> <b>Jatin Agrawal</b> - <em>jatinag@iitk.ac.in</em> - <em>7755057763</em> </p>
+									<p> <b>Tushar Agarwal</b> - <em>tushara@iitk.ac.in</em> - <em>8475007625</em> </p>
 								</div>
 							</div>
 						</div>
@@ -132,8 +132,8 @@
 							<div class="clearfix post_detail">
 								<h2><a href="">Web Executives</a></h2>
 								<div class="clearfix post_excerpt">
-									<p> <b>Adarsh Srivastava</b> - <em>adarshs@iitk.ac.in</em> </p>
-									<p> <b>Rithvik Patibandla</b> - <em>rithvikp@iitk.ac.in</em> </p>
+									<p> <b>Adarsh Srivastava</b> - <em>adarshs@iitk.ac.in</em> - <em>8765181987</em> </p>
+									<p> <b>Rithvik Patibandla</b> - <em>rithvikp@iitk.ac.in</em> - <em>9133140747</em> </p>
 								</div>
 							</div>
 						</div>
@@ -141,7 +141,7 @@
 							<div class="clearfix post_detail">
 								<h2><a href="">Finance Executive</a></h2>
 								<div class="clearfix post_excerpt">
-									<p> <b>Sagar Chand</b> - <em>sagarch@iitk.ac.in</em> </p>
+									<p> <b>Sagar Chand</b> - <em>sagarch@iitk.ac.in</em> - <em>7755047797</em> </p>
 
 								</div>
 							</div>
@@ -150,8 +150,8 @@
 							<div class="clearfix post_detail">
 								<h2><a href="">Management Executives</a></h2>
 								<div class="clearfix post_excerpt">
-									<p> <b>Anant veer singh</b> - <em>sanant@iitk.ac.in</em> </p>
-									<p> <b>Prashant Kumar</b> - <em>prak@iitk.ac.in</em> </p>
+									<p> <b>Anant veer singh</b> - <em>sanant@iitk.ac.in</em> - <em>9519109969</em>  </p>
+									<p> <b>Prashant Kumar</b> - <em>prak@iitk.ac.in</em> - <em>8400071992</em>  </p>
 								</div>
 							</div>
 						</div>
@@ -159,8 +159,7 @@
 							<div class="clearfix post_detail">
 								<h2><a href="">Editorial Executive</a></h2>
 								<div class="clearfix post_excerpt">
-									<p> <b>Ritwik Bera</b> - <em>britwik@iitk.ac.in</em> </p>
-									<p> <b>Prashant Kumar</b> - <em>prak@iitk.ac.in</em> </p>
+									<p> <b>Ritwik Bera</b> - <em>britwik@iitk.ac.in</em> - <em>9935694212</em>  </p>
 								</div>
 							</div>
 						</div>
@@ -169,54 +168,54 @@
 								<h2><a href="">Club coordinators and hobby group leaders</a></h2>
 								<div class="clearfix post_excerpt">
 									<h3>Aeromodelling club</h3>
-									<p> <b>Ritesh Kumar Maurya</b> - <em>rkmaurya@iitk.ac.in</em> </p>
-									<p> <b>Utkarsh Bansal</b> - <em>utkarshb@iitk.ac.in</em> </p>
+									<p> <b>Ritesh Kumar Maurya</b> - <em>rkmaurya@iitk.ac.in</em> - <em>8004005409</em>  </p>
+									<p> <b>Utkarsh Bansal</b> - <em>utkarshb@iitk.ac.in</em> - <em>8923838381</em>  </p>
 									<br>
 									<h3>Astronomy club</h3>
-									<p> <b>Mandeep Singh</b> - <em>mandeeps@iitk.ac.in</em> </p>
-									<p> <b>Swati Gupta</b> - <em>swatig@iitk.ac.in</em> </p>
+									<p> <b>Mandeep Singh</b> - <em>mandeeps@iitk.ac.in</em> - <em>7755047811</em>  </p>
+									<p> <b>Swati Gupta</b> - <em>swatig@iitk.ac.in</em> - <em>7755057935</em>  </p>
 									<br>
 									<h3>Business club</h3>
-									<p> <b>Srishti Agarwal</b> - <em>srishtia@iitk.ac.in</em> </p>
-									<p> <b>Rounak Majumdar</b> - <em>rounakm@iitk.ac.in</em> </p>
-									<p> <b>Gaurav Dawrani</b> - <em>gauravd@iitk.ac.in</em> </p>
+									<p> <b>Srishti Agarwal</b> - <em>srishtia@iitk.ac.in</em> - <em>8960623852</em>  </p>
+									<p> <b>Rounak Majumdar</b> - <em>rounakm@iitk.ac.in</em> - <em>9769450947</em>  </p>
+									<p> <b>Gaurav Dawrani</b> - <em>gauravd@iitk.ac.in</em> - <em>9049917788</em>  </p>
 									<br>
 									<h3>Electronics club</h3>
-									<p> <b>Pratik Bhangale</b> - <em>pratikab@iitk.ac.in</em> </p>
-									<p> <b>Shivashish Kumar Gupta</b> - <em>kgshiva@iitk.ac.in</em> </p>
-									<p> <b>Seelam G.M.S.P kumar</b> - <em>gmspavan@iitk.ac.in</em> </p>
+									<p> <b>Pratik Bhangale</b> - <em>pratikab@iitk.ac.in</em> - <em>8960742030</em>  </p>
+									<p> <b>Shivashish Kumar Gupta</b> - <em>kgshiva@iitk.ac.in</em> - <em>7755047940</em>  </p>
+									<p> <b>Seelam G.M.S.P kumar</b> - <em>gmspavan@iitk.ac.in</em> - <em>7755057757</em>  </p>
 									<br>
 									<h3>Programming club</h3>
-									<p> <b>Saksham Sharma</b> - <em>sakshams@iitk.ac.in</em> </p>
-									<p> <b>Vinayak Tantia</b> - <em>vtantia@iitk.ac.in</em> </p>
-									<p> <b>Kunal Kapila</b> - <em>kunalkap@iitk.ac.in</em> </p>
+									<p> <b>Saksham Sharma</b> - <em>sakshams@iitk.ac.in</em> - <em>7755058004</em>  </p>
+									<p> <b>Vinayak Tantia</b> - <em>vtantia@iitk.ac.in</em> - <em>8960740450</em>  </p>
+									<p> <b>Kunal Kapila</b> - <em>kunalkap@iitk.ac.in</em> - <em>9005685064</em>  </p>
 									<br>
 									<h3>Robotics club</h3>
-									<p> <b>Mayank Mittal</b> - <em>mayankm@iitk.ac.in</em> </p>
-									<p> <b>Anvesh Jadon</b> - <em>anvesh@iitk.ac.in</em> </p>
-									<p> <b>Hemant Kumar</b> - <em>hemantk@iitk.ac.in</em> </p>
-									<p> <b>Ankit kumar</b> - <em>ankitkur@iitk.ac.in</em> </p>
+									<p> <b>Mayank Mittal</b> - <em>mayankm@iitk.ac.in</em> - <em>7755057609</em>  </p>
+									<p> <b>Anvesh Jadon</b> - <em>anvesh@iitk.ac.in</em> - <em>7755047820</em>  </p>
+									<p> <b>Hemant Kumar</b> - <em>hemantk@iitk.ac.in</em> - <em>8960860551</em>  </p>
+									<p> <b>Ankit kumar</b> - <em>ankitkur@iitk.ac.in</em> - <em>9044127554</em>  </p>
 									<br>
 									<h3>BraIN Hobby Group</h3>
-									<p> <b>Kashish Jain</b> - <em>jkashish@iitk.ac.in</em> </p>
-									<p> <b>Aditi Chaudhary</b> - <em>aditic@iitk.ac.in</em> </p>
+									<p> <b>Kashish Jain</b> - <em>jkashish@iitk.ac.in</em> - <em>7755047910</em>   </p>
+									<p> <b>Aditi Chaudhary</b> - <em>aditic@iitk.ac.in</em> - <em>9628557808</em>   </p>
 									<!-- <p> <b>Pragya</b> - <em>pragyac@iitk.ac.in</em> </p> -->
 									<br>
 									<h3>Descon Hobby Group</h3>
-									<p> <b>Amit Kumar Rai</b> - <em>amitrai@iitk.ac.in</em> </p>
-									<p> <b>Sounak Barik</b> - <em>sounak@iitk.ac.in</em> </p>
+									<p> <b>Amit Kumar Rai</b> - <em>amitrai@iitk.ac.in</em> - <em>7755047938</em>   </p>
+									<p> <b>Sounak Barik</b> - <em>sounak@iitk.ac.in</em> - <em>7755057969</em>   </p>
 									<br>
 									<h3>Rubik's Cube Hobby Group Leader</h3>
-									<p> <b>Prawaan singh</b> - <em>prawaan@iitk.ac.in</em> </p>
+									<p> <b>Prawaan singh</b> - <em>prawaan@iitk.ac.in</em> - <em>8604926690</em>   </p>
 									<!-- <p> <b>Aabhas Mathur</b> - <em>aabhasm@iitk.ac.in</em> </p> -->
 									<br>
 									<h3>Scince Coffee House Leader</h3>
-									<p> <b>Tushant Mittal</b> - <em>tushant@iitk.ac.in</em> </p>
-									<p> <b>Talla Aravind Reddy</b> - <em>arareddy@iitk.ac.in</em> </p>
+									<p> <b>Tushant Mittal</b> - <em>tushant@iitk.ac.in</em> - <em>7755047787</em>   </p>
+									<p> <b>Talla Aravind Reddy</b> - <em>arareddy@iitk.ac.in</em> - <em>7755058026</em>   </p>
 									<br>
 									<h3>Gliding Hobby Group Leader</h3>
-									<p> <b>Ashutosh</b> - <em>ashuto@iitk.ac.in</em> </p>
-									<p> <b>Surjeet Singh</b> - <em>surjeet@iitk.ac.in</em> </p>
+									<p> <b>Ashutosh</b> - <em>ashuto@iitk.ac.in</em> - <em>7755057620</em>   </p>
+									<p> <b>Surjeet Singh</b> - <em>surjeet@iitk.ac.in</em> - <em>7052140193</em>   </p>
 									<br>
 
 								</div>
